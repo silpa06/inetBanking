@@ -1,0 +1,55 @@
+package pageObjects;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class LoginPage {
+	
+	public static WebDriver driver;
+	
+	public LoginPage(WebDriver rdriver)
+	{
+		driver = rdriver;
+		PageFactory.initElements(rdriver,this); 
+	}
+	
+	@FindBy(name="uid")
+	WebElement txtUserName;
+	
+	@FindBy(name="password")
+	WebElement txtpassword;
+	
+	@FindBy(name="btnLogin")
+	WebElement btnLogin;
+	
+	@FindBy(xpath="/html/body/div[3]/div/ul/li[15]/a")
+	WebElement lnkLogout;
+	
+	
+	public void setUserName(String uname)
+	{
+		txtUserName.sendKeys(uname);
+	}
+	
+	public void setPassword(String pword)
+	{
+		txtpassword.sendKeys(pword);
+	}
+	
+	public void clickLogin()
+	{
+		btnLogin.click();
+	}
+	
+	public void clickLogout()
+	{
+		lnkLogout.click();
+	}
+	
+	
+	
+    
+
+}
