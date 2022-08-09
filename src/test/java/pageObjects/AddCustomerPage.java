@@ -18,7 +18,7 @@ public class AddCustomerPage {
 		driver = rdriver;
 		PageFactory.initElements(rdriver,this); 
 	}
-	
+	//identify web elements
 	@FindBy(how = How.XPATH, using ="//a[text()='New Customer']")
 	WebElement lnkAddCustomer;
 	
@@ -55,7 +55,7 @@ public class AddCustomerPage {
 	@FindBy(how = How.NAME, using ="sub")
 	WebElement btnSubmit;
 	
-	
+	//Action methods
 	public void clickAddNewCustomer()
 	{
 		lnkAddCustomer.click();
@@ -84,12 +84,7 @@ public class AddCustomerPage {
 			else
 				continue;
 			
-	
-			
 		}
-	
-		//System.out.println(str);
-		//rdGender.click();	
 	
 	}
 	

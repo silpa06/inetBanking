@@ -12,7 +12,7 @@ import utilities.XLUtils;
 public class LoginDDT extends BaseClass {
 	
 	@Test(dataProvider="LoginData")
-	public void loginDDT(String user,String pwd) throws InterruptedException
+	public void loginDDT(String user,String pwd,String result) throws InterruptedException
 	{
 		LoginPage lp = new LoginPage(driver);
 		lp.setUserName(user);
@@ -20,15 +20,16 @@ public class LoginDDT extends BaseClass {
 		lp.clickLogin();
 		Thread.sleep(10);
 		
+		
 		if(isAlertPresent()==true)
 		{
 			driver.switchTo().alert().accept();//close alert
 			driver.switchTo().defaultContent();
-			Assert.assertTrue(false);
+			Assert.assertEquals(result,"Invalid","invalid data test failed");
 		}
 		else
 		{
-			Assert.assertTrue(true);
+			Assert.assertEquals(result, "Valid","valid data test passed");
 			lp.clickLogout();
 			Thread.sleep(10);
 			
@@ -56,14 +57,18 @@ public class LoginDDT extends BaseClass {
 	public String[][] getData() throws IOException
 	{
 		String path = System.getProperty("user.dir")+"/src/test/java/TestData/loginmngr.xlsx";
-		int rownum = XLUtils.getRowCount(path,"Sheet1");
-		int colcount = XLUtils.getCellCount(path, "Sheet1",1);
+	    xlUtil = new XLUtils(path);
+		
+		int rownum = xlUtil.getRowCount("Sheet1");
+		int colcount = xlUtil.getCellCount("Sheet1",1);
+		System.out.println("number of rows "+rownum);
+		System.out.println("number of columns "+colcount);
 		String logindata[][] = new String[rownum][colcount];
 		for(int i=1;i<=rownum;i++)
 		{
 			for(int j=0;j<colcount;j++)
 			{
-				logindata[i-1][j] = XLUtils.getCellData(path,"Sheet1", i, j);
+				logindata[i-1][j] = xlUtil.getCellData("Sheet1", i, j);
 				
 			}
 		}

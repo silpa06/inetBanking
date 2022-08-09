@@ -9,12 +9,14 @@ public class LoginPage {
 	
 	public static WebDriver driver;
 	
+	//Create construtor taking driver parameter
 	public LoginPage(WebDriver rdriver)
 	{
 		driver = rdriver;
 		PageFactory.initElements(rdriver,this); 
 	}
 	
+	//identify all page objects
 	@FindBy(name="uid")
 	WebElement txtUserName;
 	
@@ -27,7 +29,7 @@ public class LoginPage {
 	@FindBy(xpath="/html/body/div[3]/div/ul/li[15]/a")
 	WebElement lnkLogout;
 	
-	
+	//Action methods
 	public void setUserName(String uname)
 	{
 		txtUserName.sendKeys(uname);

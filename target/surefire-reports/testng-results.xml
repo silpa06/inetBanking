@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-09T11:09:13 SGT" name="Suite" finished-at="2022-08-09T11:10:49 SGT" duration-ms="96412">
+    <groups>
+    </groups>
+    <test started-at="2022-08-09T11:09:13 SGT" name="Test" finished-at="2022-08-09T11:10:49 SGT" duration-ms="96412">
+      <class name="testCases.AddCustomerTest">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:testCases.AddCustomerTest@5ddf0d24]" started-at="2022-08-09T11:09:42 SGT" name="setUP" finished-at="2022-08-09T11:09:48 SGT" duration-ms="5975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="addNewCustomer()[pri:0, instance:testCases.AddCustomerTest@5ddf0d24]" started-at="2022-08-09T11:09:48 SGT" name="addNewCustomer" finished-at="2022-08-09T11:10:13 SGT" duration-ms="24171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.AddCustomerTest@5ddf0d24]" started-at="2022-08-09T11:10:13 SGT" name="tearDown" finished-at="2022-08-09T11:10:13 SGT" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.AddCustomerTest -->
+      <class name="testCases.EditCustomerTest">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:testCases.EditCustomerTest@363a52f]" started-at="2022-08-09T11:10:13 SGT" name="setUP" finished-at="2022-08-09T11:10:19 SGT" duration-ms="5343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="editCustomer()[pri:0, instance:testCases.EditCustomerTest@363a52f]" started-at="2022-08-09T11:10:19 SGT" name="editCustomer" finished-at="2022-08-09T11:10:49 SGT" duration-ms="29975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCustomer -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.EditCustomerTest@363a52f]" started-at="2022-08-09T11:10:49 SGT" name="tearDown" finished-at="2022-08-09T11:10:49 SGT" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.EditCustomerTest -->
+      <class name="testCases.LoginTest">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:testCases.LoginTest@14fc1f0]" started-at="2022-08-09T11:09:13 SGT" name="setUP" finished-at="2022-08-09T11:09:21 SGT" duration-ms="8176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="loginTest()[pri:0, instance:testCases.LoginTest@14fc1f0]" started-at="2022-08-09T11:09:21 SGT" name="loginTest" finished-at="2022-08-09T11:09:23 SGT" duration-ms="1638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginTest@14fc1f0]" started-at="2022-08-09T11:09:23 SGT" name="tearDown" finished-at="2022-08-09T11:09:23 SGT" duration-ms="679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginTest -->
+      <class name="testCases.LoginDDT">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:testCases.LoginDDT@e383572]" started-at="2022-08-09T11:09:23 SGT" name="setUP" finished-at="2022-08-09T11:09:30 SGT" duration-ms="7013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDDT@e383572]" started-at="2022-08-09T11:09:32 SGT" name="loginDDT" data-provider="LoginData" finished-at="2022-08-09T11:09:36 SGT" duration-ms="4469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr429138]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[nEnasYh]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDDT@e383572]" started-at="2022-08-09T11:09:36 SGT" name="loginDDT" data-provider="LoginData" finished-at="2022-08-09T11:09:38 SGT" duration-ms="1854" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr421582]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[YzUqasu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDDT@e383572]" started-at="2022-08-09T11:09:38 SGT" name="loginDDT" data-provider="LoginData" finished-at="2022-08-09T11:09:40 SGT" duration-ms="1810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr406017]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gasyqAp]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method signature="loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginDDT@e383572]" started-at="2022-08-09T11:09:40 SGT" name="loginDDT" data-provider="LoginData" finished-at="2022-08-09T11:09:42 SGT" duration-ms="1947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr45634]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[fdfdfgdf]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDDT -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.LoginDDT@e383572]" started-at="2022-08-09T11:09:42 SGT" name="tearDown" finished-at="2022-08-09T11:09:42 SGT" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.LoginDDT -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

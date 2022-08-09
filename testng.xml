@@ -11,6 +11,7 @@
 			<class name="testCases.LoginTest" />
 			<class name="testCases.LoginDDT" />
 			<class name="testCases.AddCustomerTest" />
+			<class name="testCases.EditCustomerTest" />
 
 
 		</classes>

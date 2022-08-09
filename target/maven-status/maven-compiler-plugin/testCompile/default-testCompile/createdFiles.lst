@@ -1,0 +1,12 @@
+pageObjects\EditCustomerPage.class
+utilities\ExtentReportNG.class
+utilities\Listeners.class
+testCases\LoginDDT.class
+utilities\TakeScreenShot.class
+testCases\BaseClass.class
+pageObjects\LoginPage.class
+testCases\AddCustomerTest.class
+utilities\XLUtils.class
+testCases\LoginTest.class
+testCases\EditCustomerTest.class
+pageObjects\AddCustomerPage.class

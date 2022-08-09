@@ -16,6 +16,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import pageObjects.LoginPage;
+import utilities.XLUtils;
 
 public class BaseClass {
 	
@@ -23,6 +25,8 @@ public class BaseClass {
 	Properties property;
 	String userName;
 	String passWord;
+	LoginPage login;
+	XLUtils xlUtil;
 
 	//@Parameters("browser")
 	@BeforeClass
@@ -60,17 +64,25 @@ public class BaseClass {
 		}
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-			driver.get(property.getProperty("url"));
-			
+		driver.manage().window().maximize();
+		driver.get(property.getProperty("url"));
+
 	}
 	
+	
+	
+
 	@AfterClass
 	public void tearDown()
 	{
 		driver.quit();
 	}
 	
+	public String pageTitle()
+	{
+		return driver.getTitle();
+	}
+		
 	public String randomString()
 	{
 		String genneratedString = RandomStringUtils.randomAlphanumeric(6);

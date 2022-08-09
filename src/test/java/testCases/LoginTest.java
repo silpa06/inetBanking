@@ -16,10 +16,9 @@ public class LoginTest extends BaseClass {
 	lp.setUserName(userName);
 	lp.setPassword(passWord);
 	lp.clickLogin();
-	if(driver.getTitle().equals("Guru99 Bank Manager HomePage"))
+	if(pageTitle().equals("Guru99 Bank Manager HomePage"))
 	{
 		Assert.assertTrue(true);
-		
 		
 	}
 	else
@@ -29,9 +28,5 @@ public class LoginTest extends BaseClass {
 		
 	}
 	
-	
-	
 	}
-	
-
 }
