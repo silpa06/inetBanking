@@ -20,6 +20,7 @@ public class AddCustomerTest extends BaseClass {
 		login.setUserName(userName);
 		login.setPassword(passWord);
 		login.clickLogin();
+
 		Thread.sleep(3000);
 		
 	

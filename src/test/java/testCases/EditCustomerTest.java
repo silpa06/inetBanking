@@ -15,9 +15,6 @@ public class EditCustomerTest extends BaseClass{
 		login.setPassword(passWord);
 		login.clickLogin();
 		Thread.sleep(3000);
-		String exp_Title ="Guru99 Bank Manager HomePage";
-		String actual_Title = pageTitle();
-		Assert.assertEquals(actual_Title, exp_Title,"login success");
 		EditCustomerPage editCust = new EditCustomerPage(driver);
 		
 		//Edit Customer

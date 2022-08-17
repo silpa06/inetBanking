@@ -94,5 +94,7 @@ public class BaseClass {
 		String genneratednum = RandomStringUtils.randomNumeric(6);
 		return(genneratednum);
 	}
+	
+	
 
 }
